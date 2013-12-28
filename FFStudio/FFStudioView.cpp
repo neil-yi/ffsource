@@ -217,6 +217,8 @@ void CFFStudioView::OnInitialUpdate()
 
   //Disable scintilla's context menu
   rCtrl.UsePopUp(FALSE);
+
+  updateLineNumberWidth();
 }
 
 void CFFStudioView::SetAStyle(int style, COLORREF fore, COLORREF back, int size, const char* face) 
@@ -240,4 +242,25 @@ void CFFStudioView::DefineMarker(int marker, int markerType, COLORREF fore, COLO
   rCtrl.MarkerSetBack(marker, back);
 }
 
+void CFFStudioView::updateLineNumberWidth() {
+	CScintillaCtrl& rCtrl = GetCtrl();
+	int linesVisible = rCtrl.LinesOnScreen();
+	if (linesVisible)
+	{
+		int firstVisibleLineVis = rCtrl.GetFirstVisibleLine();
+		int lastVisibleLineVis = linesVisible + firstVisibleLineVis + 1;
+		int lastVisibleLineDoc = rCtrl.DocLineFromVisible(lastVisibleLineVis);
+		int i = 0;
+		while (lastVisibleLineDoc)
+		{
+			lastVisibleLineDoc /= 10;
+			++i;
+		}
+		i = max(i, 3);
+		{
+			int pixelWidth = int(8 + i * rCtrl.TextWidth(STYLE_LINENUMBER, "8"));
+			rCtrl.SetMarginWidthN( 0, pixelWidth);
+		}
+	}
+}
 
