@@ -1,0 +1,338 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GuiLib - Win32 Release Unicode--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"ReleaseU/GuiLib.res" /d "NDEBUG" /d "_AFXDLL" "D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiLib.rc"" 
+Creating temporary file "C:\DOCUME~1\vincent\LOCALS~1\Temp\RSP1A6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "_UNICODE" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_AFXEXT" /D "GUILIB_EXPORTS" /D "_CRT_SECURE_NO_DEPRECATE" /Fr"ReleaseU/" /Fp"ReleaseU/GuiLib.pch" /Yu"stdafx.h" /Fo"ReleaseU/" /Fd"ReleaseU/" /FD /c 
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\CoolMenu.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiADODB.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiButtonDoc.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiButtonTimer.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiCapOutBar.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuicheckBox.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiComboBoxExt.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiComboFont.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiContainer.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiControlBar.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDocBarExten.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDocBarExtenEx.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDockContext.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDockToolBar.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDockToolBarEx.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDocSpecial.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDrawLayer.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiDropDownEdit.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiEdit.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiFDir.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiFile.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiFolder.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiFolderFlat.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiFrameWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiGroupBox.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiHeaderCtrl.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiImageLinkButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiLabelButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiLib.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiLinkButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiListEdit.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiMDIFrame.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiMDITabbed.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiMDIWindowsDlg.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiMiniFrame.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiMiniFrameWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiMiniSplitter.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiMiniTool.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiNormalButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiOfficeBar.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiOutLook.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiOutLookView.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiPanelAccess.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiPanelWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiPowerPointView.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiRadioButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiSliderCtrl.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiSplitter.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiSplitterWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiStaticStandar.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiStatusBar.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiSysTray.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiTabbed.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiTabPowerPoint.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiTabWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiToolBarWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiToolButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiView.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiViewWorkTab.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiVisioFolder.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiWorkPanel.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiWorkTab.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\MenuBar.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\NewMenu.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\Subclass.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\VisualStylesXP.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\ECommentPane.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EIconTextButtonProperty.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\ENumericProperty.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropCtrl.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropCtrlBase.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EProperty.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyCheck.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyColor.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyCombo.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyDir.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyDouble.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyFile.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyFloat.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyFont.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyInt.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertySeparator.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyString.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertySystemTime.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyTextblock.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropertyTextblockWindow.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropList.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropListWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropWnd.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\EPropWndEdit.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\HoverButton.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\IPropertyChangeListener.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\SetRawPixels.cpp"
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\Util.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\vincent\LOCALS~1\Temp\RSP1A6.tmp" 
+Creating temporary file "C:\DOCUME~1\vincent\LOCALS~1\Temp\RSP1A7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "_UNICODE" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_AFXEXT" /D "GUILIB_EXPORTS" /D "_CRT_SECURE_NO_DEPRECATE" /Fr"ReleaseU/" /Fp"ReleaseU/GuiLib.pch" /Yc"stdafx.h" /Fo"ReleaseU/" /Fd"ReleaseU/" /FD /c 
+"D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\vincent\LOCALS~1\Temp\RSP1A7.tmp" 
+Creating temporary file "C:\DOCUME~1\vincent\LOCALS~1\Temp\RSP1A8.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\bin/GuiTk115u.pdb" /machine:I386 /out:"..\bin\GuiTk115u.dll" /implib:"..\bin/GuiTk115u.lib" 
+".\ReleaseU\CoolMenu.obj"
+".\ReleaseU\GuiADODB.obj"
+".\ReleaseU\GuiButton.obj"
+".\ReleaseU\GuiButtonDoc.obj"
+".\ReleaseU\GuiButtonTimer.obj"
+".\ReleaseU\GuiCapOutBar.obj"
+".\ReleaseU\GuicheckBox.obj"
+".\ReleaseU\GuiComboBoxExt.obj"
+".\ReleaseU\GuiComboFont.obj"
+".\ReleaseU\GuiContainer.obj"
+".\ReleaseU\GuiControlBar.obj"
+".\ReleaseU\GuiDocBarExten.obj"
+".\ReleaseU\GuiDocBarExtenEx.obj"
+".\ReleaseU\GuiDockContext.obj"
+".\ReleaseU\GuiDockToolBar.obj"
+".\ReleaseU\GuiDockToolBarEx.obj"
+".\ReleaseU\GuiDocSpecial.obj"
+".\ReleaseU\GuiDrawLayer.obj"
+".\ReleaseU\GuiDropDownEdit.obj"
+".\ReleaseU\GuiEdit.obj"
+".\ReleaseU\GuiFDir.obj"
+".\ReleaseU\GuiFile.obj"
+".\ReleaseU\GuiFolder.obj"
+".\ReleaseU\GuiFolderFlat.obj"
+".\ReleaseU\GuiFrameWnd.obj"
+".\ReleaseU\GuiGroupBox.obj"
+".\ReleaseU\GuiHeaderCtrl.obj"
+".\ReleaseU\GuiImageLinkButton.obj"
+".\ReleaseU\GuiLabelButton.obj"
+".\ReleaseU\GuiLib.obj"
+".\ReleaseU\GuiLinkButton.obj"
+".\ReleaseU\GuiListEdit.obj"
+".\ReleaseU\GuiMDIFrame.obj"
+".\ReleaseU\GuiMDITabbed.obj"
+".\ReleaseU\GuiMDIWindowsDlg.obj"
+".\ReleaseU\GuiMiniFrame.obj"
+".\ReleaseU\GuiMiniFrameWnd.obj"
+".\ReleaseU\GuiMiniSplitter.obj"
+".\ReleaseU\GuiMiniTool.obj"
+".\ReleaseU\GuiNormalButton.obj"
+".\ReleaseU\GuiOfficeBar.obj"
+".\ReleaseU\GuiOutLook.obj"
+".\ReleaseU\GuiOutLookView.obj"
+".\ReleaseU\GuiPanelAccess.obj"
+".\ReleaseU\GuiPanelWnd.obj"
+".\ReleaseU\GuiPowerPointView.obj"
+".\ReleaseU\GuiRadioButton.obj"
+".\ReleaseU\GuiSliderCtrl.obj"
+".\ReleaseU\GuiSplitter.obj"
+".\ReleaseU\GuiSplitterWnd.obj"
+".\ReleaseU\GuiStaticStandar.obj"
+".\ReleaseU\GuiStatusBar.obj"
+".\ReleaseU\GuiSysTray.obj"
+".\ReleaseU\GuiTabbed.obj"
+".\ReleaseU\GuiTabPowerPoint.obj"
+".\ReleaseU\GuiTabWnd.obj"
+".\ReleaseU\GuiToolBarWnd.obj"
+".\ReleaseU\GuiToolButton.obj"
+".\ReleaseU\GuiView.obj"
+".\ReleaseU\GuiViewWorkTab.obj"
+".\ReleaseU\GuiVisioFolder.obj"
+".\ReleaseU\GuiWorkPanel.obj"
+".\ReleaseU\GuiWorkTab.obj"
+".\ReleaseU\MenuBar.obj"
+".\ReleaseU\NewMenu.obj"
+".\ReleaseU\StdAfx.obj"
+".\ReleaseU\Subclass.obj"
+".\ReleaseU\VisualStylesXP.obj"
+".\ReleaseU\ECommentPane.obj"
+".\ReleaseU\EIconTextButtonProperty.obj"
+".\ReleaseU\ENumericProperty.obj"
+".\ReleaseU\EPropCtrl.obj"
+".\ReleaseU\EPropCtrlBase.obj"
+".\ReleaseU\EProperty.obj"
+".\ReleaseU\EPropertyCheck.obj"
+".\ReleaseU\EPropertyColor.obj"
+".\ReleaseU\EPropertyCombo.obj"
+".\ReleaseU\EPropertyDir.obj"
+".\ReleaseU\EPropertyDouble.obj"
+".\ReleaseU\EPropertyFile.obj"
+".\ReleaseU\EPropertyFloat.obj"
+".\ReleaseU\EPropertyFont.obj"
+".\ReleaseU\EPropertyInt.obj"
+".\ReleaseU\EPropertySeparator.obj"
+".\ReleaseU\EPropertyString.obj"
+".\ReleaseU\EPropertySystemTime.obj"
+".\ReleaseU\EPropertyTextblock.obj"
+".\ReleaseU\EPropertyTextblockWindow.obj"
+".\ReleaseU\EPropList.obj"
+".\ReleaseU\EPropListWnd.obj"
+".\ReleaseU\EPropWnd.obj"
+".\ReleaseU\EPropWndEdit.obj"
+".\ReleaseU\HoverButton.obj"
+".\ReleaseU\IPropertyChangeListener.obj"
+".\ReleaseU\SetRawPixels.obj"
+".\ReleaseU\Util.obj"
+".\ReleaseU\GuiLib.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\vincent\LOCALS~1\Temp\RSP1A8.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CoolMenu.cpp
+GuiADODB.cpp
+d:\projet en cours\guilib1.9_broken\guilib\releaseu\msado15.tlh(409) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+GuiButton.cpp
+GuiButtonDoc.cpp
+GuiButtonTimer.cpp
+GuiCapOutBar.cpp
+GuicheckBox.cpp
+GuiComboBoxExt.cpp
+GuiComboFont.cpp
+GuiContainer.cpp
+GuiControlBar.cpp
+GuiDocBarExten.cpp
+GuiDocBarExtenEx.cpp
+GuiDockContext.cpp
+GuiDockToolBar.cpp
+GuiDockToolBarEx.cpp
+GuiDocSpecial.cpp
+GuiDrawLayer.cpp
+GuiDropDownEdit.cpp
+GuiEdit.cpp
+Generating Code...
+D:\Projet En cours\GuiLib1.9_BROKEN\GuiLib\GuiButton.cpp(234) : warning C4700: local variable 'm_point' used without having been initialized
+Compiling...
+GuiFDir.cpp
+GuiFile.cpp
+GuiFolder.cpp
+GuiFolderFlat.cpp
+GuiFrameWnd.cpp
+GuiGroupBox.cpp
+GuiHeaderCtrl.cpp
+GuiImageLinkButton.cpp
+GuiLabelButton.cpp
+GuiLib.cpp
+GuiLinkButton.cpp
+GuiListEdit.cpp
+GuiMDIFrame.cpp
+GuiMDITabbed.cpp
+GuiMDIWindowsDlg.cpp
+GuiMiniFrame.cpp
+GuiMiniFrameWnd.cpp
+GuiMiniSplitter.cpp
+GuiMiniTool.cpp
+GuiNormalButton.cpp
+Generating Code...
+Compiling...
+GuiOfficeBar.cpp
+GuiOutLook.cpp
+GuiOutLookView.cpp
+GuiPanelAccess.cpp
+GuiPanelWnd.cpp
+GuiPowerPointView.cpp
+GuiRadioButton.cpp
+GuiSliderCtrl.cpp
+GuiSplitter.cpp
+GuiSplitterWnd.cpp
+GuiStaticStandar.cpp
+GuiStatusBar.cpp
+GuiSysTray.cpp
+GuiTabbed.cpp
+GuiTabPowerPoint.cpp
+GuiTabWnd.cpp
+GuiToolBarWnd.cpp
+GuiToolButton.cpp
+GuiView.cpp
+GuiViewWorkTab.cpp
+Generating Code...
+Compiling...
+GuiVisioFolder.cpp
+GuiWorkPanel.cpp
+GuiWorkTab.cpp
+MenuBar.cpp
+NewMenu.cpp
+Subclass.cpp
+VisualStylesXP.cpp
+ECommentPane.cpp
+EIconTextButtonProperty.cpp
+ENumericProperty.cpp
+EPropCtrl.cpp
+EPropCtrlBase.cpp
+EProperty.cpp
+EPropertyCheck.cpp
+EPropertyColor.cpp
+EPropertyCombo.cpp
+EPropertyDir.cpp
+EPropertyDouble.cpp
+EPropertyFile.cpp
+EPropertyFloat.cpp
+Generating Code...
+Compiling...
+EPropertyFont.cpp
+EPropertyInt.cpp
+EPropertySeparator.cpp
+EPropertyString.cpp
+EPropertySystemTime.cpp
+EPropertyTextblock.cpp
+EPropertyTextblockWindow.cpp
+EPropList.cpp
+EPropListWnd.cpp
+EPropWnd.cpp
+EPropWndEdit.cpp
+HoverButton.cpp
+IPropertyChangeListener.cpp
+SetRawPixels.cpp
+Util.cpp
+Generating Code...
+Linking...
+   Creating library ..\bin/GuiTk115u.lib and object ..\bin/GuiTk115u.exp
+
+
+
+<h3>Results</h3>
+GuiTk115u.dll - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

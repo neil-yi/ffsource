@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Unicode|Win32">
+      <Configuration>Debug Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Unicode|Win32">
+      <Configuration>Release Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\bin\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">
+    <OutDir>.\..\bin\</OutDir>
+    <IntDir>.\DebugU\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <OutDir>.\..\bin\</OutDir>
+    <IntDir>.\ReleaseU\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\bin\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_WINDLL;_AFXEXT;GUILIB_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\GuiLib.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\bin\GuiLib.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\bin\GuiLib.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\bin\GuiTk115.dll</OutputFile>
+      <ImportLibrary>.\..\bin\GuiTk115.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;UNICODE;WIN32;_WINDOWS;_WINDLL;_AFXEXT;GUILIB_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\DebugU\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\DebugU\GuiLib.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\DebugU\</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugU\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\bin\GuiLib.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\bin\GuiLib.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\bin\GuiTk115ud.dll</OutputFile>
+      <ImportLibrary>.\..\bin\GuiTk115ud.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_WINDLL;_AFXEXT;GUILIB_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseU\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\ReleaseU\GuiLib.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseU\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseU\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\bin\GuiLib.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\bin\GuiLib.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\bin\GuiTk115u.dll</OutputFile>
+      <ImportLibrary>.\..\bin\GuiTk115u.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_WINDLL;_AFXEXT;GUILIB_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\GuiLib.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\bin\GuiLib.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\bin\GuiLib.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\bin\GuiTk115d.dll</OutputFile>
+      <ImportLibrary>.\..\bin\GuiTk115d.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CoolMenu.cpp" />
+    <ClCompile Include="GuiADODB.cpp" />
+    <ClCompile Include="GuiButton.cpp" />
+    <ClCompile Include="GuiButtonDoc.cpp" />
+    <ClCompile Include="GuiButtonTimer.cpp" />
+    <ClCompile Include="GuiCapOutBar.cpp" />
+    <ClCompile Include="GuicheckBox.cpp" />
+    <ClCompile Include="GuiComboBoxExt.cpp" />
+    <ClCompile Include="GuiComboFont.cpp" />
+    <ClCompile Include="GuiContainer.cpp" />
+    <ClCompile Include="GuiControlBar.cpp" />
+    <ClCompile Include="GuiDocBarExten.cpp" />
+    <ClCompile Include="GuiDocBarExtenEx.cpp" />
+    <ClCompile Include="GuiDockContext.cpp" />
+    <ClCompile Include="GuiDockToolBar.cpp" />
+    <ClCompile Include="GuiDockToolBarEx.cpp" />
+    <ClCompile Include="GuiDocSpecial.cpp" />
+    <ClCompile Include="GuiDrawLayer.cpp" />
+    <ClCompile Include="GuiDropDownEdit.cpp" />
+    <ClCompile Include="GuiEdit.cpp" />
+    <ClCompile Include="GuiFDir.cpp" />
+    <ClCompile Include="GuiFile.cpp" />
+    <ClCompile Include="GuiFolder.cpp" />
+    <ClCompile Include="GuiFolderFlat.cpp" />
+    <ClCompile Include="GuiFrameWnd.cpp" />
+    <ClCompile Include="GuiGroupBox.cpp" />
+    <ClCompile Include="GuiHeaderCtrl.cpp" />
+    <ClCompile Include="GuiImageLinkButton.cpp" />
+    <ClCompile Include="GuiLabelButton.cpp" />
+    <ClCompile Include="GuiLib.cpp" />
+    <ClCompile Include="GuiLinkButton.cpp" />
+    <ClCompile Include="GuiListEdit.cpp" />
+    <ClCompile Include="GuiMDIFrame.cpp" />
+    <ClCompile Include="GuiMDITabbed.cpp" />
+    <ClCompile Include="GuiMDIWindowsDlg.cpp" />
+    <ClCompile Include="GuiMiniFrame.cpp" />
+    <ClCompile Include="GuiMiniFrameWnd.cpp" />
+    <ClCompile Include="GuiMiniSplitter.cpp" />
+    <ClCompile Include="GuiMiniTool.cpp" />
+    <ClCompile Include="GuiNormalButton.cpp" />
+    <ClCompile Include="GuiOfficeBar.cpp" />
+    <ClCompile Include="GuiOutLook.cpp" />
+    <ClCompile Include="GuiOutLookView.cpp" />
+    <ClCompile Include="GuiPanelAccess.cpp" />
+    <ClCompile Include="GuiPanelWnd.cpp" />
+    <ClCompile Include="GuiPowerPointView.cpp" />
+    <ClCompile Include="GuiRadioButton.cpp" />
+    <ClCompile Include="GuiSliderCtrl.cpp" />
+    <ClCompile Include="GuiSplitter.cpp" />
+    <ClCompile Include="GuiSplitterWnd.cpp" />
+    <ClCompile Include="GuiStaticStandar.cpp" />
+    <ClCompile Include="GuiStatusBar.cpp" />
+    <ClCompile Include="GuiSysTray.cpp" />
+    <ClCompile Include="GuiTabbed.cpp" />
+    <ClCompile Include="GuiTabPowerPoint.cpp" />
+    <ClCompile Include="GuiTabWnd.cpp" />
+    <ClCompile Include="GuiToolBarWnd.cpp" />
+    <ClCompile Include="GuiToolButton.cpp" />
+    <ClCompile Include="GuiView.cpp" />
+    <ClCompile Include="GuiViewWorkTab.cpp" />
+    <ClCompile Include="GuiVisioFolder.cpp" />
+    <ClCompile Include="GuiWorkPanel.cpp" />
+    <ClCompile Include="GuiWorkTab.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="NewMenu.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Subclass.cpp" />
+    <ClCompile Include="VisualStylesXP.cpp" />
+    <ClCompile Include="ECommentPane.cpp" />
+    <ClCompile Include="EIconTextButtonProperty.cpp" />
+    <ClCompile Include="ENumericProperty.cpp" />
+    <ClCompile Include="EPropCtrl.cpp" />
+    <ClCompile Include="EPropCtrlBase.cpp" />
+    <ClCompile Include="EProperty.cpp" />
+    <ClCompile Include="EPropertyCheck.cpp" />
+    <ClCompile Include="EPropertyColor.cpp" />
+    <ClCompile Include="EPropertyCombo.cpp" />
+    <ClCompile Include="EPropertyDir.cpp" />
+    <ClCompile Include="EPropertyDouble.cpp" />
+    <ClCompile Include="EPropertyFile.cpp" />
+    <ClCompile Include="EPropertyFloat.cpp" />
+    <ClCompile Include="EPropertyFont.cpp" />
+    <ClCompile Include="EPropertyInt.cpp" />
+    <ClCompile Include="EPropertySeparator.cpp" />
+    <ClCompile Include="EPropertyString.cpp" />
+    <ClCompile Include="EPropertySystemTime.cpp" />
+    <ClCompile Include="EPropertyTextblock.cpp" />
+    <ClCompile Include="EPropertyTextblockWindow.cpp" />
+    <ClCompile Include="EPropList.cpp" />
+    <ClCompile Include="EPropListWnd.cpp" />
+    <ClCompile Include="EPropWnd.cpp" />
+    <ClCompile Include="EPropWndEdit.cpp" />
+    <ClCompile Include="HoverButton.cpp" />
+    <ClCompile Include="IPropertyChangeListener.cpp" />
+    <ClCompile Include="SetRawPixels.cpp" />
+    <ClCompile Include="Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GuiLib.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CBaseTab.h" />
+    <ClInclude Include="CGuiEditView.h" />
+    <ClInclude Include="CoolMenu.h" />
+    <ClInclude Include="GuiADODB.h" />
+    <ClInclude Include="GuiBaseTab.h" />
+    <ClInclude Include="GuiButton.h" />
+    <ClInclude Include="GuiButtonDoc.h" />
+    <ClInclude Include="GuiButtonTimer.h" />
+    <ClInclude Include="GuiCapOutBar.h" />
+    <ClInclude Include="GuicheckBox.h" />
+    <ClInclude Include="GuiColors.h" />
+    <ClInclude Include="GuiComboBoxExt.h" />
+    <ClInclude Include="GuiComboFont.h" />
+    <ClInclude Include="GuiContainer.h" />
+    <ClInclude Include="GuiControlBar.h" />
+    <ClInclude Include="GuiDocBarExten.h" />
+    <ClInclude Include="GuiDocBarExtenEx.h" />
+    <ClInclude Include="GuiDockBar.h" />
+    <ClInclude Include="GuiDockContext.h" />
+    <ClInclude Include="GuiDockToolBar.h" />
+    <ClInclude Include="GuiDockToolBarEx.h" />
+    <ClInclude Include="GuiDocSpecial.h" />
+    <ClInclude Include="GuiDrawLayer.h" />
+    <ClInclude Include="GuiDropDownEdit.h" />
+    <ClInclude Include="GuiEdit.h" />
+    <ClInclude Include="GuiFDir.h" />
+    <ClInclude Include="GuiFile.h" />
+    <ClInclude Include="GuiFolder.h" />
+    <ClInclude Include="GuiFolderFlat.h" />
+    <ClInclude Include="GuiFrameWnd.h" />
+    <ClInclude Include="GuiGridLayout.h" />
+    <ClInclude Include="GuiGroupBox.h" />
+    <ClInclude Include="GuiHeaderCtrl.h" />
+    <ClInclude Include="GuiImageLinkButton.h" />
+    <ClInclude Include="GuiLabelButton.h" />
+    <ClInclude Include="GuiLib.h" />
+    <ClInclude Include="GuiLibRes.h" />
+    <ClInclude Include="GuiLinkButton.h" />
+    <ClInclude Include="GuiListEdit.h" />
+    <ClInclude Include="GuiMDIFrame.h" />
+    <ClInclude Include="GuiMDITabbed.h" />
+    <ClInclude Include="GuiMDIWindowsDlg.h" />
+    <ClInclude Include="GuiMiniFrame.h" />
+    <ClInclude Include="GuiMiniFrameWnd.h" />
+    <ClInclude Include="GuiMiniSplitter.h" />
+    <ClInclude Include="GuiMiniTool.h" />
+    <ClInclude Include="GuiNormalButton.h" />
+    <ClInclude Include="GuiOfficeBar.h" />
+    <ClInclude Include="GuiOutLook.h" />
+    <ClInclude Include="GuiOutLookView.h" />
+    <ClInclude Include="GuiPanelAccess.h" />
+    <ClInclude Include="GuiPanelWnd.h" />
+    <ClInclude Include="GuiPowerPointView.h" />
+    <ClInclude Include="GuiRadioButton.h" />
+    <ClInclude Include="GuiSliderCtrl.h" />
+    <ClInclude Include="GuiSplitter.h" />
+    <ClInclude Include="GuiSplitterWnd.h" />
+    <ClInclude Include="GuiStaticStandar.h" />
+    <ClInclude Include="GuiStatusBar.h" />
+    <ClInclude Include="GuiSysTray.h" />
+    <ClInclude Include="GuiTabbed.h" />
+    <ClInclude Include="GuiTabPowerPoint.h" />
+    <ClInclude Include="GuiTabWnd.h" />
+    <ClInclude Include="GuiToolBarWnd.h" />
+    <ClInclude Include="GuiToolButton.h" />
+    <ClInclude Include="GuiView.h" />
+    <ClInclude Include="GuiViewWorkTab.h" />
+    <ClInclude Include="GuiVisioFolder.h" />
+    <ClInclude Include="GuiWorkPanel.h" />
+    <ClInclude Include="GuiWorkTab.h" />
+    <ClInclude Include="MenuBar.h" />
+    <ClInclude Include="NewMenu.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Subclass.h" />
+    <ClInclude Include="VisualStylesXP.h" />
+    <ClInclude Include="CheckOff.h" />
+    <ClInclude Include="CheckOffDisabled.h" />
+    <ClInclude Include="CheckOn.h" />
+    <ClInclude Include="CheckOnDisabled.h" />
+    <ClInclude Include="ECommentPane.h" />
+    <ClInclude Include="EIconTextButtonProperty.h" />
+    <ClInclude Include="ENumericProperty.h" />
+    <ClInclude Include="EPropCtrl.h" />
+    <ClInclude Include="EPropCtrlBase.h" />
+    <ClInclude Include="EProperty.h" />
+    <ClInclude Include="EPropertyCheck.h" />
+    <ClInclude Include="EPropertyColor.h" />
+    <ClInclude Include="EPropertyCombo.h" />
+    <ClInclude Include="EPropertyDir.h" />
+    <ClInclude Include="EPropertyDouble.h" />
+    <ClInclude Include="EPropertyFile.h" />
+    <ClInclude Include="EPropertyFloat.h" />
+    <ClInclude Include="EPropertyFont.h" />
+    <ClInclude Include="EPropertyInt.h" />
+    <ClInclude Include="EPropertySeparator.h" />
+    <ClInclude Include="EPropertyString.h" />
+    <ClInclude Include="EPropertySystemTime.h" />
+    <ClInclude Include="EPropertyTextblock.h" />
+    <ClInclude Include="EPropertyTextblockWindow.h" />
+    <ClInclude Include="EPropList.h" />
+    <ClInclude Include="EPropListWnd.h" />
+    <ClInclude Include="EPropWnd.h" />
+    <ClInclude Include="EPropWndEdit.h" />
+    <ClInclude Include="HoverBitmaps.h" />
+    <ClInclude Include="HoverButton.h" />
+    <ClInclude Include="IPropertyChangeListener.h" />
+    <ClInclude Include="IPropertyHost.h" />
+    <ClInclude Include="NodeClosed.h" />
+    <ClInclude Include="NodeOpen.h" />
+    <ClInclude Include="SetRawPixels.h" />
+    <ClInclude Include="Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="arrowdow.ico" />
+    <CustomBuild Include="arrowrig.ico" />
+    <CustomBuild Include="bitmap1.bmp" />
+    <CustomBuild Include="res\bitmap1.bmp" />
+    <CustomBuild Include="bitmap2.bmp" />
+    <CustomBuild Include="bitmap3.bmp" />
+    <CustomBuild Include="bitmap4.bmp" />
+    <CustomBuild Include="bitradio.bmp" />
+    <CustomBuild Include="bmp00001.bmp" />
+    <CustomBuild Include="res\bmp00001.bmp" />
+    <CustomBuild Include="DockOffice.bmp" />
+    <CustomBuild Include="res\DockOffice.bmp" />
+    <CustomBuild Include="res\guiarrowdown.ico" />
+    <CustomBuild Include="res\guiarrowright.ico" />
+    <CustomBuild Include="res\GuiDefault.bmp" />
+    <CustomBuild Include="res\guidockbar.bmp" />
+    <CustomBuild Include="res\guidockoffice.bmp" />
+    <CustomBuild Include="res\GuiLib.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\guimdiicons.bmp" />
+    <CustomBuild Include="ico00001.ico" />
+    <CustomBuild Include="res\ico00001.ico" />
+    <CustomBuild Include="ico00002.ico" />
+    <CustomBuild Include="res\ico238.ico" />
+    <CustomBuild Include="res\ico239.ico" />
+    <CustomBuild Include="icon1.ico" />
+    <CustomBuild Include="res\icon1.ico" />
+    <CustomBuild Include="idc_hand.ico" />
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
