@@ -26,7 +26,7 @@ dctags.exe: OPT = -g
 #	$(CC) $(LDFLAGS) $(OPT) $(CFLAGS) $(DEFINES)  -o $@ $(SOURCES)
 
 ctags.dll: $(SOURCES)
-	$(CC) $(LDFLAGS) $(OPT) $(CFLAGS) $(DEFINES) $(DLLFLAGS) -o $@ $(SOURCES)
+	$(CC) $(LDFLAGS) $(OPT) $(CFLAGS) $(DEFINES) $(DLLFLAGS) -o ../binU/$@ $(SOURCES)
 
 clean:
 	- del ctags.exe

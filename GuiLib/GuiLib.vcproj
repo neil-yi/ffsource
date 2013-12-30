@@ -18,7 +18,7 @@
 	<Configurations>
 		<Configuration
 			Name="Debug Unicode|Win32"
-			OutputDirectory=".\..\bin"
+			OutputDirectory=".\..\binU"
 			IntermediateDirectory=".\DebugU"
 			ConfigurationType="2"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -78,15 +78,15 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="..\bin\GuiTk115ud.dll"
+				OutputFile="..\binU\GuiTk115ud.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile=".\..\bin/GuiTk115ud.pdb"
+				ProgramDatabaseFile=".\..\binU/GuiTk115ud.pdb"
 				SubSystem="2"
 				RandomizedBaseAddress="1"
 				DataExecutionPrevention="0"
-				ImportLibrary=".\..\bin/GuiTk115ud.lib"
+				ImportLibrary=".\..\binU/GuiTk115ud.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -101,7 +101,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\bin/GuiLib.bsc"
+				OutputFile=".\..\binU/GuiLib.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -115,7 +115,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release Unicode|Win32"
-			OutputDirectory=".\..\bin"
+			OutputDirectory=".\..\binU"
 			IntermediateDirectory=".\ReleaseU"
 			ConfigurationType="2"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -176,14 +176,14 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="..\bin\GuiTk115u.dll"
+				OutputFile="..\binU\GuiTk115u.dll"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				ProgramDatabaseFile=".\..\bin/GuiTk115u.pdb"
+				ProgramDatabaseFile=".\..\binU/GuiTk115u.pdb"
 				SubSystem="2"
 				RandomizedBaseAddress="1"
 				DataExecutionPrevention="0"
-				ImportLibrary=".\..\bin/GuiTk115u.lib"
+				ImportLibrary=".\..\binU/GuiTk115u.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -198,7 +198,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\..\bin/GuiLib.bsc"
+				OutputFile=".\..\binU/GuiLib.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -272,7 +272,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="..\bin\GuiTk115d.dll"
+				OutputFile="..\binU\GuiTk115d.dll"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				GenerateDebugInformation="true"
@@ -309,7 +309,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory=".\..\bin"
+			OutputDirectory=".\..\binU"
 			IntermediateDirectory=".\Release"
 			ConfigurationType="2"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -368,10 +368,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="..\bin\GuiTk115.dll"
+				OutputFile="..\binU\GuiTk115.dll"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				ProgramDatabaseFile=".\..\bin/GuiTk115.pdb"
+				ProgramDatabaseFile=".\..\binU/GuiTk115.pdb"
 				SubSystem="2"
 				RandomizedBaseAddress="1"
 				DataExecutionPrevention="0"
@@ -3177,11 +3177,11 @@
 				>
 			</File>
 			<File
-				RelativePath="res\bitmap1.bmp"
+				RelativePath="bitmap1.bmp"
 				>
 			</File>
 			<File
-				RelativePath="bitmap1.bmp"
+				RelativePath="res\bitmap1.bmp"
 				>
 			</File>
 			<File
@@ -3201,19 +3201,19 @@
 				>
 			</File>
 			<File
-				RelativePath="res\bmp00001.bmp"
-				>
-			</File>
-			<File
 				RelativePath="bmp00001.bmp"
 				>
 			</File>
 			<File
-				RelativePath="res\DockOffice.bmp"
+				RelativePath="res\bmp00001.bmp"
 				>
 			</File>
 			<File
 				RelativePath="DockOffice.bmp"
+				>
+			</File>
+			<File
+				RelativePath="res\DockOffice.bmp"
 				>
 			</File>
 			<File
@@ -3265,11 +3265,11 @@
 				>
 			</File>
 			<File
-				RelativePath="res\icon1.ico"
+				RelativePath="icon1.ico"
 				>
 			</File>
 			<File
-				RelativePath="icon1.ico"
+				RelativePath="res\icon1.ico"
 				>
 			</File>
 			<File

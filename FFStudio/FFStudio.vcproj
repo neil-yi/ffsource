@@ -297,7 +297,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="..\bin/FFStudio.bsc"
+				OutputFile="..\binU/FFStudio.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -397,7 +397,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile="..\bin/FFStudio.bsc"
+				OutputFile="..\binU/FFStudio.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
