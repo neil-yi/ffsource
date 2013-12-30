@@ -5,7 +5,7 @@
 *.pydevproject
 .project
 .metadata
-bin/
+#bin/
 tmp/
 *.tmp
 *.bak
@@ -45,6 +45,8 @@ local.properties
 
 [Dd]ebug/
 [Rr]elease/
+[Dd]ebugU/
+[Rr]eleaseU/
 x64/
 build/
 [Bb]in/
