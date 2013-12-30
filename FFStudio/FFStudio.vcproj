@@ -213,7 +213,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release Unicode|Win32"
-			OutputDirectory="..\bin"
+			OutputDirectory="..\binU"
 			IntermediateDirectory=".\ReleaseU"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -274,11 +274,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="..\bin/FFStudioU.exe"
+				OutputFile="..\binU/FFStudioU.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="..\bin"
-				ProgramDatabaseFile="..\bin/FFStudioU.pdb"
+				AdditionalLibraryDirectories="..\binU"
+				ProgramDatabaseFile="..\binU/FFStudioU.pdb"
 				SubSystem="2"
 				EntryPointSymbol="wWinMainCRTStartup"
 				RandomizedBaseAddress="1"
@@ -311,7 +311,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug Unicode|Win32"
-			OutputDirectory="..\bin"
+			OutputDirectory="..\binU"
 			IntermediateDirectory=".\DebugU"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -373,12 +373,12 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="sqlite3.lib"
-				OutputFile="..\bin/FFStudioUD.exe"
+				OutputFile="..\binU/FFStudioUD.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="..\bin"
+				AdditionalLibraryDirectories="..\binU"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile="..\bin/FFStudioUD.pdb"
+				ProgramDatabaseFile="..\binU/FFStudioUD.pdb"
 				SubSystem="2"
 				EntryPointSymbol="wWinMainCRTStartup"
 				RandomizedBaseAddress="1"
