@@ -162,6 +162,7 @@ protected:
   virtual void OnSavePointLeft(SCNotification* pSCNotification);
   virtual void OnModifyAttemptRO(SCNotification* pSCNotification);
   virtual void OnDoubleClick(SCNotification* pSCNotification);
+  virtual void OnClick(SCNotification* pSCNotification);
   virtual void OnUpdateUI(SCNotification* pSCNotification);
   virtual void OnModified(SCNotification* pSCNotification);
   virtual void OnMacroRecord(SCNotification* pSCNotification);

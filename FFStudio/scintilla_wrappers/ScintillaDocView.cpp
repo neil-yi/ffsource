@@ -1356,6 +1356,13 @@ void CScintillaView::OnDoubleClick(SCNotification* /*pSCNotification*/)
 	AfxMessageBox(str);
 }
 
+void CScintillaView::OnClick(SCNotification* /*pSCNotification*/)
+{
+  //By default do nothing, derived classes may want to do something
+	CString str = "click";
+	AfxMessageBox(str);
+}
+
 void CScintillaView::OnUpdateUI(SCNotification* /*pSCNotification*/)
 {
 	_smartHighlighter.highlightView(this);
@@ -1618,6 +1625,10 @@ BOOL CScintillaView::OnNotify(WPARAM wParam, LPARAM lParam, LRESULT* pResult)
         OnDoubleClick(pSCNotification);
         break;
       }
+	  case SCN_CLICK:
+	  {
+		  OnClick(pSCNotification);
+	  }
       case SCN_UPDATEUI:
       {
         OnUpdateUI(pSCNotification);

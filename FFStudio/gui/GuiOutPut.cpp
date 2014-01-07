@@ -27,13 +27,16 @@ int CGuiOutPut::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	/*if (!m_ListTask.Create(dwStyle,CRect(0,0,0,0), &m_TabSolExplorer, 1))
 		return -1;*/
 
-	m_pListTask = (CMfcieView*)m_pListTask->CreateObject();
-    m_pListTask->Create(NULL,NULL,dwStyle,CRect(0,0,0,0),&m_TabSolExplorer,2000);
+	m_pDetailView = (CFFStudioView*)m_pDetailView->CreateObject();
+    m_pDetailView->Create(NULL,NULL,dwStyle,CRect(0,0,0,0),&m_TabSolExplorer,1);
 
-	m_pListTask->Navigate2(_T("http://localhost/ueditor/_examples/completeDemo.html"));
+	m_pCommentEdit = (CMfcieView*)m_pCommentEdit->CreateObject();
+    m_pCommentEdit->Create(NULL,NULL,dwStyle,CRect(0,0,0,0),&m_TabSolExplorer,2);
 
-	if (!m_EditOutput.Create(dwStyle,CRect(0,0,0,0), &m_TabSolExplorer, 3))
-		return -1;
+	m_pCommentEdit->Navigate2(_T("http://localhost/ueditor/_examples/completeDemo.html"));
+
+	/*if (!m_EditOutput.Create(dwStyle,CRect(0,0,0,0), &m_TabSolExplorer, 3))
+		return -1;*/
 
 	if (!m_EditFind.Create(dwStyle,CRect(0,0,0,0), &m_TabSolExplorer, 4))
 		return -1;
@@ -42,8 +45,8 @@ int CGuiOutPut::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		return -1;
 	
 	m_TabSolExplorer.SetImageList(IDB_DBPROJECTS, 16,8, RGB (255, 0, 0));
-	m_TabSolExplorer.Addtab(m_pListTask,"Task List",6);
-	m_TabSolExplorer.Addtab(&m_EditOutput,"Output",7);
+	m_TabSolExplorer.Addtab(m_pDetailView,"Detail Infomation",6);
+	m_TabSolExplorer.Addtab(m_pCommentEdit,"Comment editbox",7);
 	m_TabSolExplorer.Addtab(&m_EditFind,"Find Results 1",8);
 	m_TabSolExplorer.Addtab(&m_Search,"Search Results",5);
 	SetIcon(IDB_BITMAPHELP,16,5,RGB(255,0,0),3);

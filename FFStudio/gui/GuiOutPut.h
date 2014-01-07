@@ -3,16 +3,17 @@
 #include "guicontrolbar.h"
 #include "GuiTabWnd.h"
 #include "mfcieVw.h"
+#include "../FFStudioView.h"
+
 class CGuiOutPut :	public CGuiControlBar
 {
-protected:
+public:
 	CGuiTabWnd	m_TabSolExplorer;
-	//CListCtrl   m_ListTask;
-	CMfcieView* m_pListTask;
-	//CHtmlCtrl m_ListTask;
-	CRichEditCtrl		m_EditOutput;
+	CFFStudioView* m_pDetailView;
+	CMfcieView* m_pCommentEdit;
 	CEdit		m_EditFind;
 	CListCtrl   m_Search;
+
 public:
 	CGuiOutPut(void);
 	virtual ~CGuiOutPut(void);
